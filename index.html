@@ -1,160 +1,299 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designexo Pro - Clon</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <!-- FancyBox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="css/designexo-css.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Designexo Pro - Demo Personalizado</title>
+  <!-- Fuente e íconos (ej. Font Awesome para íconos sociales y flecha) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Owl Carousel CSS (para el carrusel) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Nuestro CSS principal -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">DESIGN<span>EXO</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">TESTIMONIALS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">ENJOY YOUR SPACE</h1>
-            <p class="hero-subtitle">Creamos soluciones digitales que impulsan tu negocio.</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">Check it out</a>
-            </div>
-        </div>
-    </section>
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <div class="logo">DESIGN<span>EXO</span></div>
+      <nav class="main-nav">
+        <ul>
+          <!-- HOME en amarillo, el resto en blanco -->
+          <li><a href="#hero" class="active">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#shop">SHOP</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- Flecha con submenú (sin carrito) -->
+      <div class="arrow-menu">
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu">
+          <li><a href="#">Sub Opción 1</a></li>
+          <li><a href="#">Sub Opción 2</a></li>
+          <li><a href="#">Sub Opción 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    <!-- Servicios -->
-    <section id="services" class="section services">
-        <div class="container">
-            <h2 class="section-title">OUR SERVICES</h2>
-            <p class="section-subtitle">WE BUILD CREATIVE INTERIOR DESIGN</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-img">
-                            <img src="https://via.placeholder.com/400x300" alt="Interior Design">
-                            <div class="service-overlay">
-                                <a href="#" class="btn btn-primary">READ MORE</a>
-                            </div>
-                        </div>
-                        <h3 class="service-title">INTERIOR DESIGN</h3>
-                        <p class="service-text">Creamos diseños únicos y atractivos para tu marca.</p>
-                    </div>
-                </div>
-                <!-- Más servicios -->
-            </div>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-slide" style="background-image: url('https://via.placeholder.com/1920x900/000000/FFFFFF?text=Living+Area+Redesign');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h2>ENJOY YOUR SPACE</h2>
+        <h1>LIVING AREA REDESIGN</h1>
+        <p>
+          We provide a full range of services and maintenance solutions for interior design, 
+          kitchen design, urban concepts, landscaping, 3D design, and much more.
+        </p>
+        <button class="btn btn-outline">Check it out</button>
+      </div>
+    </div>
+    <!-- Podrías añadir más slides si deseas un carrusel en el hero -->
+  </section>
 
-    <!-- Portafolio -->
-    <section id="portfolio" class="section portfolio">
-        <div class="container">
-            <h2 class="section-title">PORTFOLIO</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">SHOW ALL</button>
-                <button class="filter-btn" data-filter="bathroom">BATHROOM</button>
-                <button class="filter-btn" data-filter="interior">INTERIOR</button>
-                <button class="filter-btn" data-filter="kitchen">KITCHEN</button>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-md-4 portfolio-item bathroom">
-                    <div class="portfolio-img">
-                        <img src="https://via.placeholder.com/400x300" alt="Bathroom Design">
-                        <div class="portfolio-overlay">
-                            <h4>Bathroom Design</h4>
-                            <p>Proyecto de diseño para un baño moderno.</p>
-                            <a href="https://via.placeholder.com/400x300" data-fancybox="gallery" class="portfolio-icon">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Más elementos del portafolio -->
-            </div>
+  <!-- SERVICES SECTION -->
+  <section class="services-section" id="services">
+    <div class="section-title">
+      <h3>Our Services</h3>
+      <h2>WE BUILD CREATIVE INTERIOR DESIGN</h2>
+    </div>
+    <div class="services-container">
+      <!-- Tarjeta 1 -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://via.placeholder.com/400x300" alt="Interior Design" />
+          <div class="hover-overlay">
+            <a href="#" class="btn btn-yellow">READ MORE</a>
+          </div>
         </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section id="testimonials" class="section testimonials">
-        <div class="container">
-            <h2 class="section-title">WHAT OUR CLIENTS SAY ABOUT US</h2>
-            <div class="testimonial-carousel">
-                <div class="testimonial-item">
-                    <img src="https://via.placeholder.com/100" alt="Cliente 1" class="testimonial-img">
-                    <p class="testimonial-text">"Excelente trabajo, muy profesional."</p>
-                    <h4 class="testimonial-author">Juan Pérez</h4>
-                    <p class="testimonial-position">CEO, Empresa XYZ</p>
-                </div>
-                <!-- Más testimonios -->
-            </div>
+        <h4>INTERIOR DESIGN</h4>
+        <p>Lorem ipsum is simply text of the printing and typesetting industry.</p>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://via.placeholder.com/400x300" alt="Architectural Design" />
+          <div class="hover-overlay">
+            <a href="#" class="btn btn-yellow">READ MORE</a>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Designexo Pro</h4>
-                    <p>Somos una agencia creativa especializada en diseño y desarrollo web.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#hero">Inicio</a></li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#portfolio">Portafolio</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Redes Sociales</h4>
-                    <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Designexo Pro. Todos los derechos reservados.</p>
-            </div>
+        <h4>ARCHITECTURAL DESIGN</h4>
+        <p>Lorem ipsum is simply text of the printing and typesetting industry.</p>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://via.placeholder.com/400x300" alt="Exterior Design" />
+          <div class="hover-overlay">
+            <a href="#" class="btn btn-yellow">READ MORE</a>
+          </div>
         </div>
-    </footer>
+        <h4>EXTERIOR DESIGN</h4>
+        <p>Lorem ipsum is simply text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- Tu script personalizado -->
-    <script src="js/designexo-js.js"></script>
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="section-title">
+      <h3>Our Portfolio</h3>
+      <h2>ALL INTERIOR DESIGN SOLUTIONS</h2>
+    </div>
+    <!-- Filtro / Tabs -->
+    <ul class="portfolio-filter">
+      <li class="active"><a href="#" data-filter="all">SHOW ALL</a></li>
+      <li><a href="#" data-filter="bathroom">BATHROOM</a></li>
+      <li><a href="#" data-filter="interior">INTERIOR</a></li>
+      <li><a href="#" data-filter="kitchen">KITCHEN</a></li>
+      <li><a href="#" data-filter="office">OFFICE DECOR</a></li>
+      <li><a href="#" data-filter="residential">RESIDENTIAL</a></li>
+    </ul>
+    <!-- Galería -->
+    <div class="portfolio-gallery">
+      <!-- Ejemplos de ítems (cada uno con data-category para filtrar) -->
+      <div class="portfolio-item" data-category="bathroom">
+        <img src="https://via.placeholder.com/400x300" alt="Bathroom" />
+      </div>
+      <div class="portfolio-item" data-category="interior">
+        <img src="https://via.placeholder.com/400x300" alt="Interior" />
+      </div>
+      <div class="portfolio-item" data-category="kitchen">
+        <img src="https://via.placeholder.com/400x300" alt="Kitchen" />
+      </div>
+      <div class="portfolio-item" data-category="office">
+        <img src="https://via.placeholder.com/400x300" alt="Office Decor" />
+      </div>
+      <div class="portfolio-item" data-category="residential">
+        <img src="https://via.placeholder.com/400x300" alt="Residential" />
+      </div>
+      <!-- ...añade más según tus necesidades... -->
+    </div>
+    <!-- Botón para ver más proyectos -->
+    <div class="view-more">
+      <button class="btn btn-outline">VIEW ALL PROJECTS</button>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION (carrusel) -->
+  <section class="testimonials-section">
+    <div class="section-title">
+      <h3>Testimonials</h3>
+      <h2>WHAT OUR CLIENTS SAY ABOUT US</h2>
+    </div>
+    <div class="owl-carousel testimonials-carousel">
+      <!-- Testimonio 1 -->
+      <div class="testimonial-item">
+        <p>"You guys are legendary! If you guys keep this up, I think having amazing support, I swear I couldn't ask for any better. Thank you!"</p>
+        <h4>John Doe</h4>
+        <span>Sales Manager</span>
+      </div>
+      <!-- Testimonio 2 -->
+      <div class="testimonial-item">
+        <p>"You guys are legendary! If you guys keep this up, I think having amazing support, I swear I couldn't ask for any better. Thank you!"</p>
+        <h4>Aaron Parker</h4>
+        <span>Designer</span>
+      </div>
+      <!-- Testimonio 3 -->
+      <div class="testimonial-item">
+        <p>"You guys are legendary! If you guys keep this up, I think having amazing support, I swear I couldn't ask for any better. Thank you!"</p>
+        <h4>Charles Watson</h4>
+        <span>Founder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION (carrusel con hover) -->
+  <section class="team-section" id="team">
+    <div class="section-title">
+      <h3>The Team</h3>
+      <h2>MEET OUR BRILLIANT TEAM</h2>
+    </div>
+    <div class="owl-carousel team-carousel">
+      <!-- Miembro 1 -->
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="https://via.placeholder.com/300x300" alt="Team Member" />
+          <div class="member-overlay">
+            <h4>Olivia Harrison</h4>
+            <span>Engineer</span>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Miembro 2 -->
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="https://via.placeholder.com/300x300" alt="Team Member" />
+          <div class="member-overlay">
+            <h4>Thomas Peterson</h4>
+            <span>Architect</span>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Miembro 3 -->
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="https://via.placeholder.com/300x300" alt="Team Member" />
+          <div class="member-overlay">
+            <h4>Anna Taylor</h4>
+            <span>Interior Designer</span>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS SECTION -->
+  <section class="clients-section">
+    <div class="section-title">
+      <h3>Our Clients</h3>
+    </div>
+    <div class="clients-container">
+      <!-- Logos en gris -->
+      <div class="client-logo"><img src="https://via.placeholder.com/150x80?text=Real+Estate" alt="Client Logo" /></div>
+      <div class="client-logo"><img src="https://via.placeholder.com/150x80?text=Lorem+Ipsum" alt="Client Logo" /></div>
+      <div class="client-logo"><img src="https://via.placeholder.com/150x80?text=The+Company" alt="Client Logo" /></div>
+      <div class="client-logo"><img src="https://via.placeholder.com/150x80?text=Modern+House" alt="Client Logo" /></div>
+      <div class="client-logo"><img src="https://via.placeholder.com/150x80?text=House+Design" alt="Client Logo" /></div>
+      <div class="client-logo"><img src="https://via.placeholder.com/150x80?text=Architecture" alt="Client Logo" /></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="quick-contact">
+        <h4>Quick Contact Info</h4>
+        <p>Lorem ipsum dolor sit amet, est adipiscing elit piscis.</p>
+        <ul>
+          <li><i class="fas fa-phone"></i> 555-123-4567</li>
+          <li><i class="fas fa-envelope"></i> info@designexo.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 1234 Street Name, City</li>
+        </ul>
+      </div>
+      <div class="latest-news">
+        <h4>Latest News</h4>
+        <ul>
+          <li><a href="#">5 Things That Take a Room from Good to Great</a></li>
+          <li><a href="#">All-White House Plans Floor Panel Designs</a></li>
+          <li><a href="#">5+ Modern Interior Design Ideas</a></li>
+        </ul>
+      </div>
+      <div class="footer-gallery">
+        <h4>Gallery</h4>
+        <div class="gallery-images">
+          <img src="https://via.placeholder.com/80" alt="Gallery" />
+          <img src="https://via.placeholder.com/80" alt="Gallery" />
+          <img src="https://via.placeholder.com/80" alt="Gallery" />
+          <img src="https://via.placeholder.com/80" alt="Gallery" />
+        </div>
+      </div>
+      <div class="footer-tags">
+        <h4>Tags</h4>
+        <div class="tags">
+          <a href="#">Architecture</a>
+          <a href="#">Interior Design</a>
+          <a href="#">Exterior Design</a>
+          <a href="#">Kitchen Design</a>
+          <a href="#">Room Renovation</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copy-right">
+        <p>&copy; 2025 Designexo Interior Design. Powered by <a href="#">ThemeArile</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Nuestro script principal -->
+  <script src="script.js"></script>
 </body>
 </html>
