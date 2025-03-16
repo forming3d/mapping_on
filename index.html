@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designexo Pro - Clon</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="lib/slick/slick.min.css">
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="lib/aos/aos.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="designexo-css.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DESIGN<span>EXO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services">SERVICES <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#services">Interior Design</a></li>
+                            <li><a class="dropdown-item" href="#services">Exterior Design</a></li>
+                            <li><a class="dropdown-item" href="#services">Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#portfolio">PORTFOLIO <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#portfolio">Bathroom</a></li>
+                            <li><a class="dropdown-item" href="#portfolio">Kitchen</a></li>
+                            <li><a class="dropdown-item" href="#portfolio">Living Room</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#testimonials">TESTIMONIALS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#testimonials">Client Reviews</a></li>
+                            <li><a class="dropdown-item" href="#testimonials">Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#blog">BLOG <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#blog">Latest Posts</a></li>
+                            <li><a class="dropdown-item" href="#blog">Design Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#contact">CONTACT <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#contact">Contact Form</a></li>
+                            <li><a class="dropdown-item" href="#contact">Location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ENJOY YOUR SPACE</h1>
+            <p class="hero-subtitle">Creamos soluciones digitales que impulsan tu negocio.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Check it out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">OUR SERVICES</h2>
+            <p class="section-subtitle">WE BUILD CREATIVE INTERIOR DESIGN</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-img">
+                            <img src="img/service1.jpg" alt="Interior Design">
+                            <div class="service-overlay">
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                        <h3 class="service-title">INTERIOR DESIGN</h3>
+                        <p class="service-text">Creamos diseños únicos y atractivos para tu marca.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-img">
+                            <img src="img/service2.jpg" alt="Exterior Design">
+                            <div class="service-overlay">
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                        <h3 class="service-title">EXTERIOR DESIGN</h3>
+                        <p class="service-text">Diseños modernos para exteriores.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-img">
+                            <img src="img/service3.jpg" alt="Consulting">
+                            <div class="service-overlay">
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                        <h3 class="service-title">CONSULTING</h3>
+                        <p class="service-text">Asesoramiento profesional para tus proyectos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 class="section-title">PORTFOLIO</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">SHOW ALL</button>
+                <button class="filter-btn" data-filter="bathroom">BATHROOM</button>
+                <button class="filter-btn" data-filter="interior">INTERIOR</button>
+                <button class="filter-btn" data-filter="kitchen">KITCHEN</button>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-md-4 portfolio-item bathroom">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio1.jpg" alt="Bathroom Design">
+                        <div class="portfolio-overlay">
+                            <h4>Bathroom Design</h4>
+                            <p>Proyecto de diseño para un baño moderno.</p>
+                            <a href="img/portfolio1.jpg" data-fancybox="gallery" class="portfolio-icon">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item kitchen">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio2.jpg" alt="Kitchen Design">
+                        <div class="portfolio-overlay">
+                            <h4>Kitchen Design</h4>
+                            <p>Proyecto de diseño para una cocina minimalista.</p>
+                            <a href="img/portfolio2.jpg" data-fancybox="gallery" class="portfolio-icon">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item interior">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio3.jpg" alt="Living Room Design">
+                        <div class="portfolio-overlay">
+                            <h4>Living Room Design</h4>
+                            <p>Proyecto de diseño para un living room clásico.</p>
+                            <a href="img/portfolio3.jpg" data-fancybox="gallery" class="portfolio-icon">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">WHAT OUR CLIENTS SAY ABOUT US</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                    <img src="img/client1.jpg" alt="Cliente 1" class="testimonial-img">
+                    <p class="testimonial-text">"Excelente trabajo, muy profesional."</p>
+                    <h4 class="testimonial-author">Juan Pérez</h4>
+                    <p class="testimonial-position">CEO, Empresa XYZ</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="img/client2.jpg" alt="Cliente 2" class="testimonial-img">
+                    <p class="testimonial-text">"Increíble atención al detalle."</p>
+                    <h4 class="testimonial-author">María Gómez</h4>
+                    <p class="testimonial-position">Diseñadora, Empresa ABC</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="img/client3.jpg" alt="Cliente 3" class="testimonial-img">
+                    <p class="testimonial-text">"Los recomiendo 100%."</p>
+                    <h4 class="testimonial-author">Carlos López</h4>
+                    <p class="testimonial-position">Arquitecto, Estudio DEF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Designexo Pro</h4>
+                    <p>Somos una agencia creativa especializada en diseño y desarrollo web.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Redes Sociales</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Designexo Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/fancybox/jquery.fancybox.min.js"></script>
+    <script src="lib/aos/aos.js"></script>
+    <!-- Tu script personalizado -->
+    <script src="designexo-js.js"></script>
+</body>
+</html>
